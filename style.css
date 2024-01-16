@@ -113,4 +113,53 @@ img{
     text-align: center;
 }
 
+.features-section{
+    padding-top: 10%;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
 
+.features-title{
+    text-align: center;
+}
+
+.features-title h1{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.features-title h2{
+    font-weight: lighter;
+    margin-bottom: 32px;
+}
+
+.features-section table{
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
+}
+
+.features-section table td{
+    padding: 16px;
+    text-align: center;
+}
+
+.features-section table th{
+    padding-block: 16px; /*atas bawah*/
+    text-align: center;
+}
+
+.features-section thead tr {
+    background-color:cadetblue;
+    color: #ffffff;
+}
+
+.features-section tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.features-section tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
