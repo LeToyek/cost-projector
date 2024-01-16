@@ -4,3 +4,25 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+nav{
+    display: flex; /*kolom ke row*/
+    min-width: 100vw;
+    background-color: aqua;
+    justify-content: space-between; 
+    padding: 16px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+section{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+
+.main-section{
+    align-items: center;
+    justify-content: center;
+}
