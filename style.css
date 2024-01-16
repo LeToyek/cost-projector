@@ -11,10 +11,11 @@ body{
 
 nav{
     display: flex; /*kolom ke row*/
-    background-color: aqua;
+    background-color: cadetblue;
     width: 100vw;
     justify-content: space-between;
-    padding: 16px;
+    padding-block: 16px;
+    padding-inline: 5%;
     align-items: center;
     position: fixed;
     top: 0;
@@ -28,4 +29,76 @@ section{
 .main-section{
     align-items: center;
     justify-content: center;
+}
+
+.main-title{
+    text-align: center;
+}
+
+.main-title h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.main-title h3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: lighter;
+}
+
+.main-button{
+    padding-block: 8px;
+    padding-inline: 16px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.about-us-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5%;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+
+.about-us{
+    margin-left: 10%;
+}
+
+.about-us-section h1{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.about-us-section p{
+    line-height: 140%;
+}
+
+.pricing-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5%;
+}
+
+.pricing-section h1{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.pricing-section p{
+    line-height: 140%;
+}
+
+table{
+    width: 100%;
 }
