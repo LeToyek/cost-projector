@@ -75,6 +75,10 @@ section{
 
 .main-button:hover {background-color: rgb(116, 182, 185)}
 
+.nav-burger{
+    display: none;
+}
+
 .about-us-section{
     display: flex;
     align-items: center;

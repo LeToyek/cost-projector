@@ -1,11 +1,17 @@
 @media screen and (max-width: 768px) {
   /* Styles for screens 768 pixels or less /
     / Add your mobile-specific styles here */
+  nav{
+    padding-inline: 8%;
+  }
+
+
   .nav-menu {
     display: none;
   }
 
   .about-us-section {
+    padding-inline: 8%;
     flex-direction: column;
   }
   .about-us{
@@ -20,6 +26,7 @@
 
   .pricing-section{
     flex-direction: column;
+    padding-inline: 8%;
   }
   .pricing-section h1{
     margin-bottom: 16px;
@@ -35,7 +42,42 @@
   }
 
   .features-section{
+    padding-inline: 8%;
     justify-content: center;
+  }
+
+  .features-title h2{
+    font-size: 20px;
+  }
+  
+  #features-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
+}
+
+  .footer-section{
+  padding-inline: 8%;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  .footer-title p{
+    margin-bottom: 16px;
+    font-size: 16px;
   }
 }
 
+.footer-socmed a{
+  margin: 0 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-burger{
+  display: block; 
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
