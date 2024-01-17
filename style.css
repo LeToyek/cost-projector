@@ -19,6 +19,18 @@ nav{
     align-items: center;
     position: fixed;
     top: 0;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none; /* menghapus garis bawah pada tautan */
+    margin: 0 15px; /* menambahkan spasi antara tautan */
+}
+
+.nav-menu a:hover {
+    color: lightgray;
 }
 
 section{
@@ -54,7 +66,10 @@ section{
     border: none;
     color: white;
     font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.main-button:hover {background-color: rgb(116, 182, 185)}
 
 .about-us-section{
     display: flex;
@@ -101,16 +116,14 @@ img{
 
 .pricing-section .pricing{
     flex: 1;
+    margin-right: 10%;
 }
 
-.pricing-section table{
+#pricing-table {
     flex: 1;
     width: 100%;
-}
-
-.pricing-section table td{
-    padding: 16px;
-    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
 }
 
 .features-section{
@@ -135,31 +148,44 @@ img{
     margin-bottom: 32px;
 }
 
-.features-section table{
+#features-table{
     width: 80%;
     border-collapse: collapse;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
 }
 
-.features-section table td{
-    padding: 16px;
+#features-table td, #features-table th, #pricing-table td, #pricing-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
 }
 
-.features-section table th{
-    padding-block: 16px; /*atas bawah*/
+#features-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#pricing-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#features-table tr:hover {background-color: #ddd;}
+
+#pricing-table tr:hover {background-color: #ddd;}
+
+#features-table th, #pricing-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: cadetblue;
+    color: white;
     text-align: center;
 }
 
-.features-section thead tr {
-    background-color:cadetblue;
-    color: #ffffff;
+.footer-section{
+    color: white;
+    width: 100%;
+    min-height: 16vh;
+    background-color: cadetblue;
 }
 
-.features-section tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.features-section tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+.footer-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5%;
 }
