@@ -8,13 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style-mobile.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="main.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </head>
   <body>
     <nav>
@@ -38,8 +34,8 @@
           <button class="main-button">Start now</button>
         </div>
       </section>
-      <section class="about-us-section" id="about-us-section" data-aos="fade-up">
-        <img src="assets/image-1.png" alt="" />
+      <section class="about-us-section" id="about-us-section" >
+        <img src="assets/image-1.png" alt="" data-aos="fade-up"/>
         <div class="about-us">
           <h1>About Us</h1>
           <p>
@@ -167,5 +163,9 @@
         </div>
       </section>
     </main>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
