@@ -6,29 +6,30 @@
     <title>Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style-mobile.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> 
     <script src="main.js"></script>
   </head>
   <body>
     <nav>
       <div class="nav-title">
-        <h1>Cost Projection</h1>
+        <a href="#main-section"><h1>Cost Projection</h1></a>
       </div>
       <div class="nav-menu">
-        <a href="#">About Us</a>
-        <a href="#">Pricing</a>
-        <a href="#">Example</a>
+        <a href="#about-us-section">About Us</a>
+        <a href="#pricing-section">Pricing</a>
+        <a href="#features-section">Example</a>
       </div>
     </nav>
     <main>
-      <section class="main-section">
+      <section class="main-section" id="main-section">
         <div class="main-title">
           <h1>Cost Projection</h1>
           <h3>Match your requirement with our services</h3>
           <button class="main-button">Start now</button>
         </div>
       </section>
-      <section class="about-us-section">
+      <section class="about-us-section" id="about-us-section">
         <img src="assets/image-1.png" alt="" />
         <div class="about-us">
           <h1>About Us</h1>
@@ -48,7 +49,7 @@
           </p>
         </div>
       </section>
-      <section class="pricing-section">
+      <section class="pricing-section" id="pricing-section">
         <div class="pricing">
           <h1>Pricing</h1>
           <p>
@@ -103,7 +104,7 @@
           </tbody>
         </table>
       </section>
-      <section class="features-section">
+      <section class="features-section" id="features-section">
         <div class="features-title">
           <h1>Define Your Features</h1>
           <h2>Choose the most reasonable price according to your features and then write it in the table.</h3>

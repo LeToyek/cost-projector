@@ -19,8 +19,12 @@ nav{
     align-items: center;
     position: fixed;
     top: 0;
-    color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title a {
+    color: white;
+    text-decoration: none; 
 }
 
 .nav-menu a {
@@ -181,11 +185,16 @@ img{
     width: 100%;
     min-height: 16vh;
     background-color: cadetblue;
-}
-
-.footer-title{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-inline: 5%;
 }
+
+.footer-socmed a{
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-socmed a:hover {color: #ddd;}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  /* Styles for screens 768 pixels or less /
+    / Add your mobile-specific styles here */
+  .nav-menu {
+    display: none;
+  }
+
+  .about-us-section {
+    flex-direction: column;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 16px;
+  }
+
+  .pricing-section{
+    flex-direction: column;
+  }
+}
