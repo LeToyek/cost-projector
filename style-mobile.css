@@ -8,6 +8,9 @@
   .about-us-section {
     flex-direction: column;
   }
+  .about-us{
+    margin: 0;
+  }
 
   img {
     width: 50%;
