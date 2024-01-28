@@ -6,40 +6,40 @@
     <title>Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style-mobile.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style-mobile.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="flex bg-cyan-700 w-full justify-between py-4 px-[5%] items-center fixed top-0 shadow-md z-[9999]">
       <div class="nav-title">
-        <a href="#main-section"><h1 class="text-2xl font-bold">Cost Projection</h1></a>
+        <a href="#main-section" class="text-white"><h1 class="text-2xl font-bold">Cost Projection</h1></a>
       </div>
       <div class="nav-menu">
-        <a href="#about-us-section">About Us</a>
-        <a href="#pricing-section">Pricing</a>
-        <a href="#features-section">Example</a>
+        <a href="#about-us-section" class="text-white font-medium mx-4 hover:underline">About Us</a>
+        <a href="#pricing-section" class="text-white font-medium mx-4 hover:underline">Pricing</a>
+        <a href="#features-section" class="text-white font-medium mx-4 hover:underline">Example</a>
       </div>
-      <button class="nav-burger">
+      <button class="nav-burger md:hidden">
         <i class="fas fa-bars"></i>
       </button>
     </nav>
     <main>
-      <section class="main-section" id="main-section">
+      <section class="main-section items-center justify-center min-h-screen flex" id="main-section">
         <div class="main-title">
-          <h1>Cost Projection</h1>
-          <h3>Match your requirement with our services</h3>
-          <button class="main-button">Start now</button>
+          <h1 class="text-[40px] font-semibold text-center">Cost Projection</h1>
+          <h3 class="mt-4 mb-4 font-normal text-center text-lg">Match your requirement with our services</h3>
+          <button class="main-button block mx-auto px-3 py-2 bg-cyan-700 rounded-md text-white font-semibold shadow-md hover:bg-[#1a99b7]">Start now</button>
         </div>
       </section>
-      <section class="about-us-section" id="about-us-section" >
-        <img src="assets/image-1.png" alt="" data-aos="zoom-in-up"/>
-        <div class="about-us" data-aos="fade-up">
-          <h1>About Us</h1>
-          <p>
+      <section class="about-us-section items-center justify-center flex px-[5%] min-h-screen" id="about-us-section" >
+        <img src="assets/image-1.png" class="w-1/4 h-1/4" data-aos="zoom-in-up"/>
+        <div class="about-us ml-[10%]" data-aos="fade-up">
+          <h1 class="mb-5 text-4xl font-semibold">About Us</h1>
+          <p class="leading-[140%]">
             Welcome to Cost Projection – your easy solution for figuring out
             project costs. We're here to simplify the process of estimating
             expenses for your project. Our goal is to make it simple for
@@ -55,10 +55,10 @@
           </p>
         </div>
       </section>
-      <section class="pricing-section" id="pricing-section">
-        <div class="pricing" data-aos="fade-up">
-          <h1>Pricing</h1>
-          <p>
+      <section class="pricing-section items-center justify-center flex px-[5%] min-h-screen" id="pricing-section">
+        <div class="pricing flex-1 mr-[10%]" data-aos="fade-up">
+          <h1 class="mb-5 text-4xl font-semibold">Pricing</h1>
+          <p class="leading-[140%]">
             Welcome to Cost Projection – your easy solution for figuring out
             project costs. We're here to simplify the process of estimating
             expenses for your project. Our goal is to make it simple for
@@ -73,94 +73,94 @@
             with clear and reliable cost projections!
           </p>
         </div>
-        <table id = "pricing-table" data-aos="zoom-in-up">
+        <table class="flex-1 w-[100%] border-collapse shadow-sm" id = "pricing-table" data-aos="zoom-in-up">
           <thead>
-            <tr>
-              <th>Difficulty Level</th>
-              <th>Price</th>
-              <th>Notes</th>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Difficulty Level</th>
+              <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Price</th>
+              <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Notes</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>0</td>
-              <td>0</td>
-              <td>-</td>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <td class="border border-solid border-gray-300 p-2 text-center">0</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">0</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">-</td>
             </tr>
-            <tr>
-              <td>1</td>
-              <td>Rp. 40.000,00</td>
-              <td>[UI] Simple</td>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
             </tr>
-            <tr>
-              <td>1</td>
-              <td>Rp. 40.000,00</td>
-              <td>[UI] Simple</td>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
             </tr>
-            <tr>
-              <td>1</td>
-              <td>Rp. 40.000,00</td>
-              <td>[UI] Simple</td>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
             </tr>
-            <tr>
-              <td>1</td>
-              <td>Rp. 40.000,00</td>
-              <td>[UI] Simple</td>
+            <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+              <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+              <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section class="features-section" id="features-section">
-        <div class="features-title" data-aos="fade-up">
-          <h1>Define Your Features</h1>
-          <h2>Choose the most reasonable price according to your features and then write it in the table.</h3>
+      <section class="features-section items-center justify-start pt-[10%] flex-col min-h-screen" id="features-section">
+        <div class="features-title text-center" data-aos="fade-up">
+          <h1 class="text-4xl mb-5 font-semibold">Define Your Features</h1>
+          <h2 class="mb-8 text-lg">Choose the most reasonable price according to your features and then write it in the table.</h3>
         </div>
-        <table id = "features-table" data-aos="zoom-in-up">
+        <table id = "features-table" class="mx-auto w-[80%] border-collapse shadow-sm" data-aos="zoom-in-up">
             <thead>
-              <tr>
-                <th>Feature Detail</th>
-                <th>Difficulty Level</th>
-                <th>Price</th>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Feature Detail</th>
+                <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Difficulty Level</th>
+                <th class="border border-solid border-gray-300 p-2 text-center pt-3 pb-3 bg-cyan-700 text-white">Price</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>-</td>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <td class="border border-solid border-gray-300 p-2 text-center">0</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">0</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">-</td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Rp. 40.000,00</td>
-                <td>[UI] Simple</td>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Rp. 40.000,00</td>
-                <td>[UI] Simple</td>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Rp. 40.000,00</td>
-                <td>[UI] Simple</td>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td>Rp. 40.000,00</td>
-                <td>[UI] Simple</td>
+              <tr class="bg-white even:bg-blue-100 hover:bg-blue-50">
+                <td class="border border-solid border-gray-300 p-2 text-center">1</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">Rp. 40.000,00</td>
+                <td class="border border-solid border-gray-300 p-2 text-center">[UI] Simple</td>
               </tr>
             </tbody>
           </table>
       </section>
-      <section class="footer-section">
+      <section class="footer-section w-full min-h-[16vh] text-white bg-cyan-700 flex items-center justify-between px-[5%]">
         <div class="footer-title">
           <p>© 2024 Cost Projection</p>
         </div>
         <div class="footer-socmed">
-          <a href="https://wa.me/6283848492366"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/lailatul-badriyah-438029217/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/lailatullb/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCzGhGBg1GZqqZyXfsxV_E3A"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6283848492366" class="text-white text-xl mx-[10px] hover:text-[#a9efff] hover:text-[22px]"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/lailatul-badriyah-438029217/" class="text-white text-xl mx-[10px] hover:text-[#a9efff] hover:text-[22px]"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/lailatullb/" class="text-white text-xl mx-[10px] hover:text-[#a9efff] hover:text-[22px]"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCzGhGBg1GZqqZyXfsxV_E3A" class="text-white text-xl mx-[10px] hover:text-[#a9efff] hover:text-[22px]"><i class="fab fa-youtube"></i></a>
         </div>
       </section>
     </main>
