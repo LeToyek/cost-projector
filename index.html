@@ -163,8 +163,40 @@
           <a href="https://www.youtube.com/channel/UCzGhGBg1GZqqZyXfsxV_E3A" class="text-white text-xl mx-[10px] hover:text-[#a9efff] hover:text-[22px]"><i class="fab fa-youtube"></i></a>
         </div>
       </section>
+      <section>
+        <div id="scroll-to-top" class="fixed bottom-5 right-5 p-2 bg-blue-700 text-white rounded-full opacity-50 hover:opacity-100 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+        </div>
+      </section>
     </main>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        // fungsi untuk menentukan kapan tombol muncul
+        function toggleScrollTopButton() {
+          const scrollToTopButton = document.getElementById('scroll-to-top');
+          if (window.scrollY > 100) {
+            scrollToTopButton.classList.remove('hidden');
+          } else {
+            scrollToTopButton.classList.add('hidden');
+          }
+        }
+      
+        // fungsi untuk melakukan scroll ke atas
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      
+        // event listener untuk memanggil fungsi saat pengguna melakukan scroll
+        window.addEventListener('scroll', toggleScrollTopButton);
+      
+        // event listener untuk memanggil fungsi scrollToTop saat tombol di klik
+        document.getElementById('scroll-to-top').addEventListener('click', scrollToTop);
+      </script>
   <script>
     AOS.init();
   </script>
