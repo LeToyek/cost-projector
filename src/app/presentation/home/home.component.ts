@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CdkDrag } from '@angular/cdk/drag-drop';
+import AOS from "aos";
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,9 @@ import { CdkDrag } from '@angular/cdk/drag-drop';
 
 })
 export class HomeComponent {
-  constructor() { }
+  constructor() { 
+    AOS.init()
+  }
 
   toggleDarkMode(): void{
     document.body.classList.toggle('dark');
