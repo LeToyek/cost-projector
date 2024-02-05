@@ -4,11 +4,15 @@ import AOS from 'aos';
 import { CommonModule } from '@angular/common';
 import { HomeService } from './home.service';
 import { Nav } from './nav';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome/dist';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCoffee,faInstitution} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faWhatsapp, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CdkDrag, CommonModule],
+  imports: [CdkDrag, CommonModule,FontAwesomeModule],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
@@ -16,6 +20,12 @@ export class HomeComponent {
   constructor() {
     AOS.init();
   }
+
+  faWhatsapp = faWhatsapp
+  faLinkedin = faLinkedin
+  faInstagram = faInstagram
+  faYoutube = faYoutube
+
 
   navList: Nav[] = [
     {
